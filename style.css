@@ -1,0 +1,96 @@
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna */
+    grid-template-rows: auto auto 1fr auto; /* Filas automáticas, contenido principal, fila automática para el pie de página */
+    grid-template-areas:
+        "header"
+        "topnav"
+        "nav"
+        "main"
+        "footer";
+    min-height: 100vh; /* Asegura que el contenedor se extienda al menos hasta el alto de la ventana. Puedes ajustarlo según tus necesidades. */
+}
+
+header {
+    grid-area: header;
+    background-color: #01111d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.topnav {
+    grid-area: topnav;
+    background-color: #092236;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.topnav a{
+    text-decoration: none;
+    margin-right: 15%;
+}
+
+.topnav a:hover{
+    background-color: aliceblue;
+}
+
+
+nav{
+    grid-area: nav;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;     
+}
+
+input{
+    width: 37%;
+    border-radius: 4px;
+}
+
+.minerva-logo img{
+    width: 10%;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+.container-logo h2{
+    color: #95bdd8;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.container-logo h2 span {
+    color: #0590ec;
+    font-weight: 700;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center; 
+    
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
