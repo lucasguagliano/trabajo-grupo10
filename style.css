@@ -19,14 +19,7 @@ header {
     text-align: center;
 }
 
-.topnav {
-    grid-area: topnav;
-    background-color: #092236;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    
-}
+
 
 .topnav a{
     text-decoration: none;
@@ -37,13 +30,25 @@ header {
     background-color: aliceblue;
 }
 
-
-nav{
-    grid-area: nav;
-    background-color: #555;
+.topnav {
+    grid-area: topnav;
+    background-color: #092236;
     color: white;
+    text-align: center;
     padding: 10px;
+    
 }
+
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 28px;
+    background-color: #092236;
+    padding: 18px;
+
+}
+
+
 
 main {
     grid-area: main;
@@ -94,3 +99,4 @@ main {
     grid-area: main;
     padding: 20px;
 }
+
