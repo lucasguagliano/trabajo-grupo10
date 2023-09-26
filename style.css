@@ -92,7 +92,12 @@ footer {
     color: white;
     padding: 10px;
     text-align: center; 
-    
+    width: 100%;
+}
+
+.boton {
+    width: 150px;
+    border-radius: 8px;
 }
 
 main {
