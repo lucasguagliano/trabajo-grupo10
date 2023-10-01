@@ -39,52 +39,73 @@ header {
     
 }
 
-.grid-conteiner{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    gap: 28px;
-    background-color: #092236;
-    padding: 18px;
-
+nav{
+    cursor: default;
+    background-color: #01111d;
 }
 
-.nav__label, .nav__input{
+.menu{
+    cursor: pointer;
+}
+
+#mmenu{
     display: none;
 }
 
-.nav__menu{
-    display: grid;
-    grid-auto-flow: row;
-    gap: 3m;
+.container-menu{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top:0;left:0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.nav__item{
-    color: white;
-    text-decoration: none;
-    --clippy: polygon(0 0,0 0, 0 100%, 0% 100%)
-    transition: clip-path .3s;
-
+#mmenu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
 }
 
-.nav__item:hover{
-    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+.cont-menu secondnav{
+    transform: translateY(15%);
 }
 
-.nav__item::after{
-    content: "";
+.cont-menu secondnav a{
     display: block;
-    background: white;
-    width: 90%;
-    margin-top: 3px;
-    height: 3px;
-    clip-path: var(--clippy)
+    text-decoration: none;
+    padding: 30px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    
 }
 
-main {
-    grid-area: main;
+.cont-menu secondnav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
     padding: 20px;
-}
 
+
+}
 footer {
     grid-area: footer;
     background-color: #333;
