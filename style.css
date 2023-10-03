@@ -2,24 +2,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+
+
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
- 
 
 
 
-.grid-container{
+
+.grid-container {
     display: grid;
     grid-template-columns: 25% auto 25%;
     grid-template-rows: auto;
     background-color: black;
     gap: 10px;
     justify-content: center;
-    
+
 }
 
 /*.grid-container > div{
@@ -28,42 +32,43 @@
     
 }*/
 
-.item1{
+.item1 {
     grid-column: 1 / span 3;
     grid-row: 1;
 }
 
-.grid-container .item1{
-    background-color: black; ;
+.grid-container .item1 {
+    background-color: black;
+    ;
 }
 
-.grid-container .item1{
+.grid-container .item1 {
     display: inline-flex;
     flex-direction: column;
     float: left;
     padding: 0.75em;
-    
+
 }
 
-.grid-container .item1 ul{
+.grid-container .item1 ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
 
 }
 
-.grid-container .item1 ul li{
+.grid-container .item1 ul li {
     display: grid;
-    
+
     justify-content: center;
     margin: 0 10em 0 10em;
 }
 
-.grid-container .item1 ul li a{
+.grid-container .item1 ul li a {
     color: #fff;
 }
 
-.grid-container .item1 ul li a:hover{
+.grid-container .item1 ul li a:hover {
     font-size: larger;
     /*background: red;
     transition: background 1s linear;*/
@@ -72,19 +77,19 @@
 }
 
 
-a{
+a {
     color: rgb(255, 255, 255);
     justify-content: space-between;
     text-decoration: none;
 }
 
-.grid-item{
+.grid-item {
     text-align: center;
     justify-items: center;
-    
+
 }
 
-.item2{
+.item2 {
     display: grid;
     grid-column: 2;
     grid-row: 2;
@@ -93,69 +98,69 @@ a{
     text-align: center;
 }
 
-.item2 img{
+.item2 img {
     width: 6.5em;
     margin-bottom: 10px;
 }
 
-.item2 input{
+.item2 input {
     border-radius: 12px;
     height: 2em;
     width: 25em;
 }
 
-.item2 h2{
+.item2 h2 {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.item2 h2 span{
+.item2 h2 span {
     color: rgb(225, 1, 214);
 }
 
-.item3{
+.item3 {
     display: grid;
     grid-column: 1 / span 3;
-    grid-row: 3;    
+    grid-row: 3;
     margin: 10px 0 0 0;
     background-color: rgb(192, 14, 144);
     color: black;
 }
 
-.item3 ul{
+.item3 ul {
     display: flex;
     justify-content: flex-end;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
-    
+
 }
 
-.item3 ul li{
+.item3 ul li {
     list-style: none;
     position: relative;
     padding: 10px 15px;
     transition: 0.5s;
     box-sizing: border-box;
-    border-right: 1px solid rgba(255, 255, 255, .2 );
+    border-right: 1px solid rgba(255, 255, 255, .2);
 }
 
-.item3 ul li:hover{
+.item3 ul li:hover {
     background-color: deeppink;
 
 }
 
-.item3 ul li:last-child{
+.item3 ul li:last-child {
     border-right: none;
 }
 
-.item3 ul li a{
+.item3 ul li a {
     text-decoration: none;
     padding: 0 20px;
     color: #fff;
 }
 
-.item3 ul li ul{
+.item3 ul li ul {
     position: absolute;
     background-color: #000;
     top: 38px;
@@ -167,18 +172,18 @@ a{
     visibility: hidden;
 }
 
-.item3 ul li:hover ul{
+.item3 ul li:hover ul {
     opacity: 1;
     visibility: visible;
 
 }
 
-.item3 ul li ul li{
+.item3 ul li ul li {
     border-right: none;
-    border-bottom: border-right 1px solid rgba(255, 255, 255, .2 );
+    border-bottom: border-right 1px solid rgba(255, 255, 255, .2);
 }
 
-.grid-conteiner{
+.grid-conteiner {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 28px;
@@ -188,7 +193,7 @@ a{
 }
 
 
-.grid-conteiner{
+.grid-conteiner {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 28px;
@@ -204,32 +209,24 @@ main {
     padding: 20px;
 }
 
-footer {
-    grid-area: footer;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;     
-}
-
-input{
+input {
     width: 37%;
     border-radius: 4px;
 }
 
-.minerva-logo img{
+.minerva-logo img {
     width: 10vw;
     margin: 60px 600px 0 0;
-    
+
 }
 
 @media only screen and (max-width: 760px) {
-     .minerva-logo img{
-      width: 40vw;
+    .minerva-logo img {
+        width: 40vw;
     }
-  }
+}
 
-.container-logo h2{
+.container-logo h2 {
     color: #95bdd8;
     font-family: 'Big Shoulders Stencil Display', cursive;
     font-weight: 300;
@@ -239,40 +236,174 @@ input{
 
 .container-logo h2 span {
     color: #0590ec;
-    font-family: 'Big Shoulders Stencil Display', cursive;;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    ;
     font-weight: 700;
 }
 
-footer {
+footer{
     grid-area: footer;
     background-color: #000000;
     color: white;
     padding: 10px;
-    text-align: center;  
+    text-align: center;
     width: 100%;
 }
 
-.grid-container-footer{
+.grid-container-footer {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    background-color: rgb(63, 61, 61);
-    gap: 10px;
-   
+    grid-template-columns: 25% 50% 25%;   
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "f-title f-title f-title"
+    "f-logo f-input f-links"
+    "f-info f-input f-links"
+    "f-social f-image f-links"; 
+    
+    height: 480px;
+    width: 100%;
+    background-color: #000;
+    /*gap: 10px;*/
+    overflow: hidden;
+    margin-top: 20em;
+    
+
 }
 
-.footer1{
-    text-align: center;
-    padding: 10;
-    
+.f-item1{
+    grid-area: f-title;
+    border-top: 1px solid #fff;
+}
+
+.sub-a1 h1{
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: 5px;
+}
+
+.sub-a1 h1 span{
+    color: rgb(225, 1, 214);
+    font-weight: 400;
+    letter-spacing: 5px;
     
 }
 
-.foot{
-    display:grid;
-    height: 500px;
-    align-content: end;
+.sub-a2 h2{
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: 5px;
+    
 }
+
+.sub-a2 h2 span{
+    color: rgb(225, 1, 214);
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: 5px;
+}
+
+
+
+.subdivision{
+    display: grid;
+    /*border: #fff;*/
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+
+    width: 100%;
+    height: 100%;
+    border-top: 1PX solid white;
+}
+
+.subdivision2{
+    display: grid;
+    /*border: #fff;*/
+    grid-template-rows: 67% 33%;
+    grid-template-columns: 100%;
+
+    width: 100%;
+    height: 100%;
+    /*border-top: 1PX solid white;*/
+}
+    
+    .sub-b1{
+        /*border: 1px solid white;*/
+    }
+
+
+.f-item2{
+    grid-area:f-logo;
+    /*border: 1px solid #fff;*/
+}
+
+.f-item2 .logo-footer h2{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.f-item2 .logo-footer span{
+    color: rgb(225, 1, 214);
+}
+
+.f-item3{
+    grid-area: f-input;
+    /*border: 1px solid #fff;*/
+}
+
+.f-item3 #lname{
+    color: #0590ec;
+}
+
+.f-item3 .input-mail {
+    color:white;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border-radius: 4px;
+    padding: 10px;
+    outline: none;
+    width: 11%;
+    transition:width 0.4s ease-in-out; 
+  }
+
+  .f-item3 .input-mail:focus {
+    width: 100%;
+  }
+
+.f-item3 .submit-button{
+    background-color: rgb(225, 1, 214);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    height: 2.5em   ;
+}
+
+
+.f-item4{
+    grid-area: f-links;
+    /*border: 1px solid #fff;*/
+}
+
+.f-item4 ul{
+    list-style: none;
+}
+
+.f-item5{
+    grid-area: f-info;
+    /*border: 1px solid #fff;*/
+}    
+
+.f-item6{
+    grid-area: f-social;
+    /*border: 1px solid #fff;*/
+}    
+
+.f-item7{
+    grid-area: f-image;
+    /*border: 1px solid #fff;*/
+    overflow: hidden;
+}    
+
 
 .boton {
     width: 150px;
@@ -284,7 +415,7 @@ main {
     padding: 20px;
 }
 
-input[type=email]{
+input[type=email] {
     background-color: #ffffff;
     border: none;
     color: rgb(0, 0, 0);
@@ -297,45 +428,48 @@ input[type=email]{
 
 
 
-.material-symbols-outlined { /*Icono de prueba*/
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+.material-symbols-outlined {
+    /*Icono de prueba*/
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 
 
-nav{
+nav {
     cursor: default;
     background-color: #01111d;
 }
 
-.menu{
+.menu {
     cursor: pointer;
 }
 
-#mmenu{
+#mmenu {
     display: none;
 }
 
-.container-menu{
+.container-menu {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100vh;
-    top:0;left:0;
+    top: 0;
+    left: 0;
     transition: all 500ms ease;
     opacity: 0;
     visibility: hidden;
 }
 
-#mmenu:checked ~ .container-menu{
+#mmenu:checked~.container-menu {
     opacity: 1;
     visibility: visible;
 }
-.cont-menu{
+
+.cont-menu {
     width: 100%;
     max-width: 250px;
     background: #1c1c1c;
@@ -344,26 +478,26 @@ nav{
     transition: all 500ms ease;
 }
 
-.cont-menu secondnav{
+.cont-menu secondnav {
     transform: translateY(15%);
 }
 
-.cont-menu secondnav a{
+.cont-menu secondnav a {
     display: block;
     text-decoration: none;
     padding: 30px;
     color: #c7c7c7;
     border-left: 5px solid transparent;
     transition: all 400ms ease;
-    
+
 }
 
-.cont-menu secondnav a:hover{
+.cont-menu secondnav a:hover {
     border-left: 5px solid #c7c7c7;
     background: #1f1f1f;
 }
 
-.cont-menu label{
+.cont-menu label {
     position: absolute;
     right: 5px;
     top: 10px;
