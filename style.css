@@ -519,3 +519,42 @@ nav {
 .divider1{
     display: block;
 }
+
+
+//* Este es el slider de línea 71*// 
+
+.first-element{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    
+}
+
+.slide{
+    width: 20%;
+    transition: 20s;
+}
+
+.slide img{
+    width: 800px;
+    height:500px;
+
+}
