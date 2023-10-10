@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/contact-page-images/talking-skull-background-removebg.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 30%;
+    
+    background-color: black;
+    color: #fff;
+
+    margin-top: 2.5em;
+    margin-left: 2em;
+}
+
+.contact-flexcontainer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+
+    margin: 2em 0 0 0;
+}
+
+
+
+.contact-flexcontainer .item1 input
+,.contact-flexcontainer .item2 input
+{
+    color:white;
+    background-color: rgba(131, 131, 131, 0.164);
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 4px;
+    padding: 10px;
+    outline: none;
+
+    margin: 1em;
+}
+
+.contact-flexcontainer .item1 input
+,.contact-flexcontainer .item2 input
+,.contact-flexcontainer .item3 textarea
+{
+    width: 25%;
+    height: 2em;
+}
+
+.contact-flexcontainer .item3 textarea{
+    width: 25%;
+    height: 15em;
+    color:white;
+    background-color: rgba(131, 131, 131, 0.164);
+    border: none;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 3em 0 0 10px;
+    
+    font-family: sans-serif;
+
+    resize: none;
+    
+}
+
+h1, h2{
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: left;
+    font-size: 5vh;
+}
+
+h2{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3vh;
+    
+}
+
+span{
+    color:  rgb(225, 1, 214);
+}
+
+.contact-flexcontainer .item4 button{
+    width: 300px;
+    height: 30px;
+    background-color:rgb(225, 1, 214);
+    border: none;
+    border-radius: 12px;
+    color:#fff;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-top: 3em;
+    margin-left: 0.5em;
+}
+
+
+.contact-flexcontainer .item5 input{
+    
+    
+    margin: 0 0 0 1em;
+    
+    background-color: :rgb(225, 1, 214);
+}
