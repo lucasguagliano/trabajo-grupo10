@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MinervaStore</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    
 </head>
 
 <body>
@@ -42,27 +42,38 @@
     </div>
 
 
-    <nav class="nav-grid-container">
-        <div class="menu-container left">
-            <label for="menu-left">
-              <img src="assets/menu.svg" alt="" class="menu">
-            </label>
-           
-            
+    <nav class="navbar">
+         
+        
+
+        <div class="icono-menu">
+            <img src="assets/menu.svg" id="icono-menu">
+        </div>
+
+        <div class="cont-menu " id="menu">
+            <ul>
+                <li> <a href=""> Musica </a> </li>
+                <li> <a href=""> Recitales </a> </li>
+                <li> <a href=""></a> Merchandise </li>
+                <li> <a href=""></a> Libros y Revistas </li>
+                <li> <a href=""></a> Titulos y Ofertas </li>
+            </ul>
         </div>
         
-          
-        <div class="menu-container right">
-            <label for="menu-right">
-              <img src="assets/menu.svg" alt="" class="menu">
-            </label>
-            
-            
+        <div class="icono-carrito">
+            <img src="assets/carrito.svg" id="icono-carrito">
         </div>
-    </nav>
-     
-    
+         
+        <div class="cont-carrito " id="carrito">
+            <ul>
+                <li> No hay elementos en tu carrito... </li>
+                
+            </ul>
+        </div>
 
+
+    </nav>
+    
 
     <main>
         <h2>Contenido Principal</h2>
@@ -135,6 +146,8 @@
 
 
     </footer>
+
+    <script src="scripts.js"></script>
 
 </body>
 
