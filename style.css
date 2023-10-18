@@ -169,6 +169,7 @@ a {
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
+    z-index: 101;
 }
 
 .item3 ul li:hover ul {
