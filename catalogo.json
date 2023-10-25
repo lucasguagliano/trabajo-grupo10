@@ -1,0 +1,33 @@
+[
+    {
+        "nombre":"Anthrax",
+        "precio":"15000",
+        "imagen": "images/merch/anthrax.jpg"
+    },
+    {
+        "nombre":"Cannibal Corpse",
+        "precio":"15000",
+        "imagen": "images/merch/cannibal corpse.jpg"
+    },
+    {
+        "nombre":"Immolation",
+        "precio":"15000",
+        "imagen": "images/merch/immolation.jpg"
+    },
+    {
+        "nombre":"Mayhem",
+        "precio":"15000",
+        "imagen": "images/merch/mayhem.jpg"
+    },
+    {
+        "nombre":"Megadeth",
+        "precio":"15000",
+        "imagen": "images/merch/megadeth.jpg"
+    },
+    {
+        "nombre":"Motley Crue",
+        "precio":"15000",
+        "imagen": "images/merch/motley crue.jpg"
+    }
+    
+]
