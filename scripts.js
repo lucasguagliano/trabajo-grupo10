@@ -36,3 +36,10 @@ iconoCarrito.addEventListener('click', (e) => {
         e.target.setAttribute('src',"assets/carrito.svg");
     }
 });
+
+
+
+
+
+
+

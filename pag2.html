@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise</title>
+    
+    <link rel="stylesheet" href="stylepag2.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar"> 
+        <div class="container">
+            <a href="index.html">
+                <img src="images/skull2.svg" alt="logo" class="logo"> 
+            </a>
+            <div class="dropdown">
+                <img src="assets/carrito.svg" id="icono-carrito" height="40" >
+                <div class="dropdown-content">
+                    <p>Llevas: $</p>
+                    <p id="contarClick"></p>
+                    <button id="clickRestar"> Eliminar </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main id="app" class="catalogo">
+        <div v-for = "producto in catalogo" class="producto">
+            <h2> {{producto.nombre}} </h2>
+            <img :src="'images/merch/' + producto.imagen" :alt="producto.nombre" >
+            <p>Precio: {{producto.precio}}
+                <br> 
+                <button class="btnClick" :data-precio="producto.precio">Comprar</button>
+            </p>
+        </div>
+    </main>
+    
+    
+     <script src = "scripts-catalogo.js" ></script>
+    
+</body>
+</html>
